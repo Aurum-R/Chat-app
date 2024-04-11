@@ -17,7 +17,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://whisper-sphere.onrender.com/Login", {
+      const socket = io("https://whisper-sphere.onrender.com/", {
         query: {
           userId: authUser._id,
         },
